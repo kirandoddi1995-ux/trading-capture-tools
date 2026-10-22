@@ -1,0 +1,428 @@
+{
+  "commissioned": false,
+  "controller_origin": "563665a32e5454633b0c27256072a7249503c520",
+  "files": {
+    ".gitattributes": "820e5f6e98f2ca2de6e7c23bd85bc547a0e935c01e52c30dc6dd2bb54f53b0a9",
+    ".github/workflows/codeql.yml": "46bc3fc954196ef62b57fb89641e362a75589c404622295735913f6485e3d46f",
+    ".github/workflows/quality.yml": "faff6c2760a5ed980e0f7d60b36baa3c45c1cd735d4b9b1d60eeaea32f3a0b16",
+    ".gitignore": "c683f721e38c7a47a66920a7afdc09cc409708027fec66d17769c36eb630bd3e",
+    "README.md": "258c046b5462ef799a2a53bceea3bcbf087e91dd58ce8a9226f3101eae854296",
+    "app_runtime.py": "91d6bf53befe306175e0afd7631be8845448234ff5dd63e831bec9fb16c558aa",
+    "automated_development_checks.py": "54d4530d75bf61fc4e7c9a01e797a4734bd6db5a9cd740ab0b314078200d2cd7",
+    "automated_directional_replay.py": "c7010ebf9d2dc474bbfac9cfc86740f468ac0ee2522cbe90c8e46e4753cfbd8f",
+    "constraints.txt": "0727a7522e50a930c1e7b93ae3d7670d41dc08507c9e87bc4cd9fc252b74c14d",
+    "development_cost_hurdles.py": "3b605432a2cb8063b4f424498c2ddd27c2b01b91f1b19a24e0a73287f448d9a2",
+    "directional_replay_diagnostics.py": "b3537900c71709c424dd0f55a1ea77fed6158193b377870cac17b3816c854963",
+    "drive_archive.py": "47bae109d49a43408fbe2cd3176a974d49e997442ddf1f1f9adcb8161caea38f",
+    "equity_runtime_health.py": "70a5a4b81e0a0a78b73587378d9e658d7b3d4aaf496463dfea8732b2996e2102",
+    "equity_scan_profiling.py": "1a70165f3e18516a61c4b3f763ddd520478806a9778bf4c706adfc82599ceb13",
+    "forward_capture_diagnostics.py": "4ddea2f4b631c581e40933c6f01fcf0f41c960a9b3612e51e8d63b36f12975f8",
+    "forward_daily_contract.py": "af8826c1cb4d9f2807dcf5f01e12ec302d4bda6c6d0dcc5edbc9acec9c3ad1c8",
+    "forward_daily_owner.ps1": "6ded10139c067193974838ea303ee28f7e65137acb0f54e8a39d1e7bbd531b69",
+    "forward_local_diagnostic.py": "2f0bd98f9047f3c9f0aa80985a11a941570f60e5d765d6e02210539276dfe793",
+    "forward_morning_readiness.py": "5f86d91168941648a863a94c84aad499f6eb7746d94dbd41f8169f943ba4ea27",
+    "forward_nifty_archive.py": "2991bb6b83cd87dcda54901ed448a0292a26c118cbef5938e834f7f0d4415cee",
+    "forward_nifty_job.py": "05c20428d2a8841faa829b28d9b4a95ecf7387225654dbcea46582a4d00058c1",
+    "forward_nifty_producer.py": "378cd1f0396fca049f8f3a036508fa0745f78c6db3631209df49bd28b4793f8e",
+    "forward_nifty_schedule.py": "f05eb59d20d50a77975efed7c47a615c5df97e9be0811b63d0ae31308c50bfd3",
+    "forward_ops_host.py": "dd670edf1536af59dcec737060d4da3ef6ba33ce489c7b407828c38f9f914373",
+    "forward_ops_plan.py": "c2e64f020e50699c6e61feebb798896ac885dca76a1cc13a74c3e2787cf386f8",
+    "forward_ops_task.ps1": "84e4734f8733051a6f09711f4974f5430d7d00e306bd857018adbb20fbc51303",
+    "forward_revision_evidence.py": "5250ee1f4b37b4f6579abb89c20c028a60f860d0cfb26f8119d81bc4b58966a5",
+    "forward_revision_policy.py": "dda49286820fd04ab9ac6ec511ba63e52b7228d7463a0631a1e00e19a9a13eec",
+    "forward_revision_quarantine.py": "b9dac8e7f98185fe2db76b25960b9197b48206ce91045789aa0143eb1c91c289",
+    "forward_session_ops.py": "e2acaed4856bf215e64507dcd1ea45bef538de4fde9a7e18f96438b6b478490c",
+    "forward_versioned_capture.py": "af2eae58cd3b8e9f6d82a4dd1b2dbf90bea8205b6420b1b4a420e26b5f1d3fcc",
+    "forward_versioned_producer.py": "10c1bf38580b021093529146d644a03a5a7bf930196aba6233d44f527c614860",
+    "forward_windows_credentials.py": "cc6c51e4e335d0836478747b590f6249791ac6c556804fee390243bc36bf9534",
+    "future_ops_diagnostics.py": "ab9241605a8e1d92f91178173e1385e94716626504e4aaad4c2e6399368b7c29",
+    "historical_review/legacy_install_forward_tasks.ps1.txt": "a4a0c8300de5b92c08af01c4f7efc95db04f0227dfbd34c078f6e910ff6043f5",
+    "intraday_directional_replay.py": "b56139ab4953c23c686f9855604fcecc17c4da27611c7e9bf5c2fd08bdbe0143",
+    "nifty_previous_close.py": "1468ed42ed457669c7e370d6a86395295c2a435632e66ae80cf51d327898055f",
+    "nifty_session_calendar.py": "b6274191ca3399d65314d238194589482ff88c7599e52bce2517c1c0212a935b",
+    "nse_owner_close.py": "7abee1af67d446f8bf903a91c1a1853b1b7ae7e54d4fc3fab69230f5eb986847",
+    "overnight_capture_audit.py": "45d48ec4e65fa145c227a9c99394fffd7976d156ebd986464533c92098797633",
+    "release_verification.py": "7817e96fb582cad4e3ed721980a1ea158ab08c777a991ad03f46d1d8b5171bc4",
+    "requirements-archive.txt": "0727a7522e50a930c1e7b93ae3d7670d41dc08507c9e87bc4cd9fc252b74c14d",
+    "requirements-capture.lock": "77fe828b454379dec8cb4607acf0d1f3ed215273a538ca5499bb178dac7159e9",
+    "requirements-forward-operations.txt": "0727a7522e50a930c1e7b93ae3d7670d41dc08507c9e87bc4cd9fc252b74c14d",
+    "requirements-test.lock": "ddb5154e37f6f839cc6359dcc06247bdf871618fbeca38b55752b20d22c1eb55",
+    "requirements.txt": "0727a7522e50a930c1e7b93ae3d7670d41dc08507c9e87bc4cd9fc252b74c14d",
+    "research_input_archive.py": "7818cb30b5d52402602a2f8254e34d59ccff5ef1b467b3aa5b63a53897ff0864",
+    "research_integrity.py": "37a2c4b372bee7f989ab196efe7020d5c39585486d9ec8e3c35709e7dbead689",
+    "research_replay_comparison.py": "66c0d2581d081cb7c96d7498d9528ad0e6da22556a8213f8ec66530c8578b877",
+    "resilience_policy.json": "034f87b769d6b000cfcb5ec8d309ef8b487dc3b4aeab1be623eaa16e9b578466",
+    "resilience_policy.sha256": "209d7234a6687e362388779077357e4fcda9e944e4b930c3b2460c92ce131b63",
+    "standalone_capture_contract.py": "8325fae3b8d3494e6b7a1ef22139327a8122fdf2b1c8741e2fcd71afc4906dec",
+    "standalone_capture_launch.py": "794d497cd0cc582f1abb46141e65a1537d82a8a8eaf397bcd8e3f0fd8fe0a93d",
+    "technical_indicators.py": "e91816284bf431f4c33934994509e9d6f605da8f992db1ff740bf3e344749032",
+    "tests/conftest.py": "556076ca97d8a15b79d394ac649ffacc8d56dd4ee29c45b739706b5992e09dd0",
+    "tests/test_capture_batch_parser.py": "6f1d87a574972ce450eb28baa61bfd7c04f2e7b7e0cc5de381e47b921fea533e",
+    "tests/test_capture_launch.py": "d63fdb57c248b8c3c6aea2c1009fbfad2a8c7ce1a81876866d961ea69a89f83a",
+    "tests/test_capture_release_adversarial.py": "85ef94685d314fa302b60e84bd9d9d45f7a9cd3c7368d2a6ec43ca652ffa6ab6",
+    "tests/test_capture_tls_contract.py": "13106282ae118027466feb757ee7cd717254dbae4542ca65e3a1e7f2513b27e2",
+    "tests/test_forward_daily_contract.py": "5aa16715d46df09b0e0e9aaad2d15f86f6d2e717378bdb17ef71a135e8a9bad7",
+    "tests/test_forward_nifty_producer.py": "443f497eccfb01e5d80f8044c0ecb5214f13b497c43122f48a8683ccaa87a309",
+    "tests/test_forward_nifty_schedule.py": "619723653e676744d95919c510dce1c8761b0e64893c8cfc39ee5c63d4c4c517",
+    "tests/test_forward_ops_plan.py": "dc1e678a233358c76542894a89d13b31999dfb639b8a380ffc77bdc81bb47cd9",
+    "tests/test_forward_revision_evidence.py": "34c8a2c0a19db09c48503be55d6f6183abc676cd877464042e09b5b2f7274cab",
+    "tests/test_forward_revision_policy.py": "9c9aae0b296ffacfa2b29ce41eaa93ecbe47ee6210d5906c3d0974ba01bc55da",
+    "tests/test_forward_revision_quarantine.py": "617e06dcdb5b6851bed5a127653d1050c05b8b5100e40d253df8fe35009c578f",
+    "tests/test_forward_versioned_capture.py": "5c385c75358226137e6bb8854f794b0747fc9bf823ae56604c32f6247f07fca3",
+    "tests/test_forward_versioned_producer.py": "bbef4bfbd148f77d97c0bce51d8ab3b1400dd0e9a1c37536ea96dc50c4163076",
+    "tests/test_forward_windows_credentials.py": "6e98f1abe1a87baa8653523d0f1a046cd3117df061f4f1ac91387f002b34c926",
+    "tests/test_nifty_previous_close.py": "3a0c6c34f8f2934bd180101958f164903c5eeec61aa8d73d090d350694d4e273",
+    "tests/test_nse_owner_close.py": "b3c4037337d4a0e0a0deb0c635c8b0f4c4f68cfeadd9828b32e017ac34de83b5",
+    "tests/test_staged_capture_repair.py": "d2efbff3aa4fd12791783eebd5973160e05c5c9f41eb2d5b8b9c56268cfd3d2d",
+    "tests/test_standalone_capture_contract.py": "12b8fa79b8fb8ea88b500f69ca2c6d88cc4abe48aa8dfc307341d47fad47f7d8"
+  },
+  "producer_origin": "1251530731cce5b75fad8601567b9320d07b710d",
+  "provenance": {
+    "app_runtime.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "91d6bf53befe306175e0afd7631be8845448234ff5dd63e831bec9fb16c558aa",
+      "transformation": "IDENTICAL_LF"
+    },
+    "automated_development_checks.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "54d4530d75bf61fc4e7c9a01e797a4734bd6db5a9cd740ab0b314078200d2cd7",
+      "transformation": "IDENTICAL_LF"
+    },
+    "automated_directional_replay.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "c7010ebf9d2dc474bbfac9cfc86740f468ac0ee2522cbe90c8e46e4753cfbd8f",
+      "transformation": "IDENTICAL_LF"
+    },
+    "development_cost_hurdles.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "3b605432a2cb8063b4f424498c2ddd27c2b01b91f1b19a24e0a73287f448d9a2",
+      "transformation": "IDENTICAL_LF"
+    },
+    "directional_replay_diagnostics.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "b3537900c71709c424dd0f55a1ea77fed6158193b377870cac17b3816c854963",
+      "transformation": "IDENTICAL_LF"
+    },
+    "drive_archive.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "47bae109d49a43408fbe2cd3176a974d49e997442ddf1f1f9adcb8161caea38f",
+      "transformation": "IDENTICAL_LF"
+    },
+    "equity_runtime_health.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "70a5a4b81e0a0a78b73587378d9e658d7b3d4aaf496463dfea8732b2996e2102",
+      "transformation": "IDENTICAL_LF"
+    },
+    "equity_scan_profiling.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "1a70165f3e18516a61c4b3f763ddd520478806a9778bf4c706adfc82599ceb13",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_capture_diagnostics.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "4ddea2f4b631c581e40933c6f01fcf0f41c960a9b3612e51e8d63b36f12975f8",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_daily_contract.py": {
+      "commit": "563665a32e5454633b0c27256072a7249503c520",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "9f72b8e0431fc1d484d0bbdfb4bfe0a8a30a5f64fc17ca4ae6b60b47cafa4a0c",
+      "transformation": "RELEASE_BINDING_ONLY"
+    },
+    "forward_daily_owner.ps1": {
+      "commit": "563665a32e5454633b0c27256072a7249503c520",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "4ee910bc266fe87b7dd768f4037c4a126896ff1f3d3b5ea7fdab0214b51ce8db",
+      "transformation": "RELEASE_BINDING_ONLY"
+    },
+    "forward_local_diagnostic.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "2f0bd98f9047f3c9f0aa80985a11a941570f60e5d765d6e02210539276dfe793",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_morning_readiness.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "5f86d91168941648a863a94c84aad499f6eb7746d94dbd41f8169f943ba4ea27",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_nifty_archive.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "2991bb6b83cd87dcda54901ed448a0292a26c118cbef5938e834f7f0d4415cee",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_nifty_job.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "05c20428d2a8841faa829b28d9b4a95ecf7387225654dbcea46582a4d00058c1",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_nifty_producer.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "378cd1f0396fca049f8f3a036508fa0745f78c6db3631209df49bd28b4793f8e",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_nifty_schedule.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "f05eb59d20d50a77975efed7c47a615c5df97e9be0811b63d0ae31308c50bfd3",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_ops_host.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "41e17a6d94ba90c19607a14d35949a555356df732f033d9e0c70996300e34885",
+      "transformation": "EXACT_ADMITTED_RELEASE_SHA_TASK_ACTIONS"
+    },
+    "forward_ops_plan.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "390eb1c32540abd5fcf25701da84f482cf63959c753f5afd6364dcac7e3f1369",
+      "transformation": "EXTERNAL_RELEASE_SHA_TASK_BINDING"
+    },
+    "forward_ops_task.ps1": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "d718872ae6f0c548bcf3ccf3c4c3566161fc0021aa2cb5f95deefa7bdaa391f6",
+      "transformation": "ISOLATED_SOURCE_RUNTIME_DISPATCH"
+    },
+    "forward_revision_evidence.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "5250ee1f4b37b4f6579abb89c20c028a60f860d0cfb26f8119d81bc4b58966a5",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_revision_policy.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "dda49286820fd04ab9ac6ec511ba63e52b7228d7463a0631a1e00e19a9a13eec",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_revision_quarantine.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "b9dac8e7f98185fe2db76b25960b9197b48206ce91045789aa0143eb1c91c289",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_session_ops.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "e2acaed4856bf215e64507dcd1ea45bef538de4fde9a7e18f96438b6b478490c",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_versioned_capture.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "af2eae58cd3b8e9f6d82a4dd1b2dbf90bea8205b6420b1b4a420e26b5f1d3fcc",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_versioned_producer.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "10c1bf38580b021093529146d644a03a5a7bf930196aba6233d44f527c614860",
+      "transformation": "IDENTICAL_LF"
+    },
+    "forward_windows_credentials.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "cc6c51e4e335d0836478747b590f6249791ac6c556804fee390243bc36bf9534",
+      "transformation": "IDENTICAL_LF"
+    },
+    "future_ops_diagnostics.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "7a0594cad1dedf4b0df4d8b66841320d467724cff29900952e04ff4ab07e92d9",
+      "transformation": "CERTIFI_PIN_ONLY"
+    },
+    "historical_review/legacy_install_forward_tasks.ps1.txt": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_path": "scripts/install_forward_tasks.ps1",
+      "source_sha256": "a4a0c8300de5b92c08af01c4f7efc95db04f0227dfbd34c078f6e910ff6043f5",
+      "transformation": "READ_ONLY_HISTORICAL_TEXT_NOT_INSTALLER"
+    },
+    "intraday_directional_replay.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "b56139ab4953c23c686f9855604fcecc17c4da27611c7e9bf5c2fd08bdbe0143",
+      "transformation": "IDENTICAL_LF"
+    },
+    "nifty_previous_close.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "1468ed42ed457669c7e370d6a86395295c2a435632e66ae80cf51d327898055f",
+      "transformation": "IDENTICAL_LF"
+    },
+    "nifty_session_calendar.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "b6274191ca3399d65314d238194589482ff88c7599e52bce2517c1c0212a935b",
+      "transformation": "IDENTICAL_LF"
+    },
+    "nse_owner_close.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "7abee1af67d446f8bf903a91c1a1853b1b7ae7e54d4fc3fab69230f5eb986847",
+      "transformation": "IDENTICAL_LF"
+    },
+    "overnight_capture_audit.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "45d48ec4e65fa145c227a9c99394fffd7976d156ebd986464533c92098797633",
+      "transformation": "IDENTICAL_LF"
+    },
+    "release_verification.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "7817e96fb582cad4e3ed721980a1ea158ab08c777a991ad03f46d1d8b5171bc4",
+      "transformation": "IDENTICAL_LF"
+    },
+    "research_input_archive.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "7818cb30b5d52402602a2f8254e34d59ccff5ef1b467b3aa5b63a53897ff0864",
+      "transformation": "IDENTICAL_LF"
+    },
+    "research_integrity.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "37a2c4b372bee7f989ab196efe7020d5c39585486d9ec8e3c35709e7dbead689",
+      "transformation": "IDENTICAL_LF"
+    },
+    "research_replay_comparison.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "66c0d2581d081cb7c96d7498d9528ad0e6da22556a8213f8ec66530c8578b877",
+      "transformation": "IDENTICAL_LF"
+    },
+    "resilience_policy.json": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "034f87b769d6b000cfcb5ec8d309ef8b487dc3b4aeab1be623eaa16e9b578466",
+      "transformation": "IDENTICAL_LF"
+    },
+    "resilience_policy.sha256": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "209d7234a6687e362388779077357e4fcda9e944e4b930c3b2460c92ce131b63",
+      "transformation": "IDENTICAL_LF"
+    },
+    "technical_indicators.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "e91816284bf431f4c33934994509e9d6f605da8f992db1ff740bf3e344749032",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_forward_daily_contract.py": {
+      "commit": "563665a32e5454633b0c27256072a7249503c520",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "58ca6b32bea820458b02781a1ae7681ebe962a2f620a2e7a2428774845d7d4c9",
+      "transformation": "NEW_RELEASE_IDENTITIES_ONLY"
+    },
+    "tests/test_forward_nifty_producer.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "443f497eccfb01e5d80f8044c0ecb5214f13b497c43122f48a8683ccaa87a309",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_forward_nifty_schedule.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "b4afdfdac7738a671d01c4361da562f9715f2e15373b6491f7fbe65778cb284e",
+      "transformation": "LEGACY_INSTALLER_READ_ONLY_TEXT_LOCATION"
+    },
+    "tests/test_forward_ops_plan.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "c956ca5bfff30d822d38b0041a83ea1b1b6c6c4bf95f3756dfa44d6578606a13",
+      "transformation": "EXPLICIT_SYNTHETIC_RELEASE_SHA"
+    },
+    "tests/test_forward_revision_evidence.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "34c8a2c0a19db09c48503be55d6f6183abc676cd877464042e09b5b2f7274cab",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_forward_revision_policy.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "9c9aae0b296ffacfa2b29ce41eaa93ecbe47ee6210d5906c3d0974ba01bc55da",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_forward_revision_quarantine.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "617e06dcdb5b6851bed5a127653d1050c05b8b5100e40d253df8fe35009c578f",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_forward_versioned_capture.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "5c385c75358226137e6bb8854f794b0747fc9bf823ae56604c32f6247f07fca3",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_forward_versioned_producer.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "bbef4bfbd148f77d97c0bce51d8ab3b1400dd0e9a1c37536ea96dc50c4163076",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_forward_windows_credentials.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "6e98f1abe1a87baa8653523d0f1a046cd3117df061f4f1ac91387f002b34c926",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_nifty_previous_close.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "3a0c6c34f8f2934bd180101958f164903c5eeec61aa8d73d090d350694d4e273",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_nse_owner_close.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "b3c4037337d4a0e0a0deb0c635c8b0f4c4f68cfeadd9828b32e017ac34de83b5",
+      "transformation": "IDENTICAL_LF"
+    },
+    "tests/test_staged_capture_repair.py": {
+      "commit": "1251530731cce5b75fad8601567b9320d07b710d",
+      "repository": "Trading-Dashboard",
+      "source_sha256": "d2efbff3aa4fd12791783eebd5973160e05c5c9f41eb2d5b8b9c56268cfd3d2d",
+      "transformation": "IDENTICAL_LF"
+    }
+  },
+  "runtime_pins": {
+    "certifi": "2026.10.19",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.1",
+    "cryptography": "50.0.1",
+    "google-auth": "2.57.0",
+    "idna": "3.19",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "pyarrow": "24.0.0",
+    "pyasn1": "0.6.4",
+    "pyasn1_modules": "0.4.2",
+    "pycparser": "3.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.3.post1",
+    "requests": "2.34.2",
+    "six": "1.17.0",
+    "tzdata": "2026.3",
+    "urllib3": "2.8.0"
+  },
+  "schema": "capture-distribution-v1"
+}

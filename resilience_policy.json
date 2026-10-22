@@ -1,0 +1,92 @@
+{
+  "version": "resilience-v2-continuous-evolution",
+  "state_machine": {
+    "clean_windows_to_recover": 3,
+    "emergency_requires_authorization": true
+  },
+  "slo": {
+    "window_minutes": 30,
+    "availability_target": 0.995,
+    "maximum_p95_latency_ms": 2500,
+    "maximum_error_rate": 0.005,
+    "fast_burn_rate": 14.4,
+    "slow_burn_rate": 6.0
+  },
+  "market_data": {
+    "maximum_quote_age_seconds": 5,
+    "maximum_clock_skew_seconds": 2,
+    "maximum_heartbeat_age_seconds": 10,
+    "maximum_cross_provider_difference_bps": 15,
+    "minimum_cross_provider_ticks": 2,
+    "require_independent_quote": false,
+    "maximum_sequence_gap": 100
+  },
+  "calibration": {
+    "minimum_samples": 500,
+    "maximum_age_days": 30,
+    "maximum_brier": 0.25,
+    "maximum_ece": 0.08,
+    "minimum_log_loss_skill": 0.01,
+    "minimum_log_loss_improvement_ci_low": 0.0,
+    "maximum_brier_deterioration": 0.05,
+    "consecutive_breaches_to_abstain": 2
+  },
+  "continuous_evolution": {
+    "minimum_production_models": 1,
+    "maximum_model_probability_range": 0.15,
+    "maximum_single_model_weight": 0.8,
+    "minimum_conformal_samples": 500,
+    "conformal_alpha": 0.1,
+    "maximum_conformal_width": 0.35,
+    "minimum_conformal_coverage": 0.88,
+    "minimum_reliability_bin_samples": 30,
+    "minimum_log_loss_skill": 0.01,
+    "minimum_log_loss_improvement_ci_low": 0.0,
+    "minimum_fill_oos_samples": 500,
+    "maximum_fill_brier": 0.25,
+    "maximum_fill_ece": 0.08,
+    "minimum_fill_probability": 0.5,
+    "minimum_claim_samples": 1000,
+    "minimum_candidate_coverage": 0.05,
+    "minimum_claim_wilson_lower": 0.99,
+    "minimum_regime_samples": 100,
+    "minimum_claim_regimes": 3
+  },
+  "execution": {
+    "maximum_slippage_bps": 50,
+    "maximum_reject_rate": 0.02,
+    "maximum_partial_fill_age_seconds": 30
+  },
+  "clock": {
+    "maximum_ntp_offset_seconds": 0.25,
+    "exchange_timezone": "Asia/Kolkata"
+  },
+  "collector": {
+    "lease_ttl_seconds": 180,
+    "maximum_silence_seconds": 900
+  },
+  "outbox": {
+    "maximum_oldest_pending_seconds": 900,
+    "maximum_pending_events": 100
+  },
+  "secrets": {
+    "maximum_age_days": 90,
+    "warning_days_before_expiry": 14
+  },
+  "recovery": {
+    "maximum_rpo_minutes": 15,
+    "maximum_rto_minutes": 60,
+    "drill_maximum_age_days": 90
+  },
+  "capacity": {
+    "maximum_cpu_fraction": 0.85,
+    "maximum_memory_fraction": 0.85,
+    "maximum_db_pool_fraction": 0.80,
+    "maximum_queue_depth": 1000
+  },
+  "retention": {
+    "evidence_days": 2555,
+    "operational_log_days": 90,
+    "personal_data_days": 30
+  }
+}
