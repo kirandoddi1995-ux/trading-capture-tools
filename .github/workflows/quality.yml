@@ -1,0 +1,74 @@
+name: Capture source and security quality
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.13.9', '3.13.16']
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Fresh complete hash-locked test environment
+        run: |
+          python -m venv --without-pip "$RUNNER_TEMP/capture-test"
+          python -m pip --python "$RUNNER_TEMP/capture-test/bin/python" install --require-hashes --only-binary=:all: -r requirements-test.lock
+          echo "$RUNNER_TEMP/capture-test/bin" >> "$GITHUB_PATH"
+      - run: python -m pip check
+      - name: Exact final SHA and complete source tree
+        env:
+          REVIEWED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python -I -S -B standalone_capture_contract.py --verify-commit "$REVIEWED_HEAD"
+      - name: Entire capture profile audit, no exceptions
+        run: python -m pip_audit -r requirements-capture.lock
+      - name: Entire installed test environment audit, no exceptions
+        run: python -m pip_audit
+      - run: python -B -m pytest -q -p no:cacheprovider
+      - name: Import producer and exercise public-only profile check
+        run: |
+          python -B -c "import forward_nifty_producer, forward_versioned_capture, forward_ops_plan"
+          python -B future_ops_diagnostics.py --mode package --allow-read-only
+      - name: Fresh runtime consistency (no test/UI packages)
+        if: matrix.python == '3.13.9'
+        run: |
+          python -m venv --without-pip "$RUNNER_TEMP/capture-runtime"
+          python -m pip --python "$RUNNER_TEMP/capture-runtime/bin/python" install --require-hashes --only-binary=:all: -r requirements-capture.lock
+          python -m pip --python "$RUNNER_TEMP/capture-runtime/bin/python" check
+          "$RUNNER_TEMP/capture-runtime/bin/python" -B future_ops_diagnostics.py --mode dependencies --allow-read-only
+  windows:
+    name: Windows synthetic capture and controller
+    runs-on: windows-2022
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13.9'
+      - name: Fresh complete Windows test environment outside checkout
+        run: |
+          python -m venv --without-pip "$env:RUNNER_TEMP\capture-test"
+          python -m pip --python "$env:RUNNER_TEMP\capture-test\Scripts\python.exe" install --require-hashes --only-binary=:all: -r requirements-test.lock
+          "$env:RUNNER_TEMP\capture-test\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+      - run: python -m pip check
+      - name: Entire Windows installed environment audit, no exceptions
+        run: python -m pip_audit
+      - name: Synthetic suite only, no scheduled-task registration or production state
+        run: python -B -m pytest -q -p no:cacheprovider
+      - name: PowerShell 5.1 controller syntax, not execution
+        shell: powershell
+        run: |
+          $errors = $null
+          [void][System.Management.Automation.Language.Parser]::ParseFile((Join-Path $PWD 'forward_daily_owner.ps1'),[ref]$null,[ref]$errors)
+          if ($errors.Count) { throw 'CONTROLLER_SYNTAX_REJECTED' }

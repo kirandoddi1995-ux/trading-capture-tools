@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+token.json
+client_secret.json
+**/token.json
+**/client_secret.json
+.env
+.streamlit/
+*.sqlite
+*.7z
+*.csv
